@@ -13,9 +13,9 @@ function App() {
   return (
     <Router>
       <Navbar />
-      <Hero />
     </Router>
   );
 }
 
 export default App;
+
