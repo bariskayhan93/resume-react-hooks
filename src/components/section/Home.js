@@ -1,10 +1,9 @@
 import React from "react";
 export default function Home() {
   return (
-    <div>
-      <div id="home" style={{ height: 500 }}>
-        <h1>Hello <br />I'm Baris</h1>
+    <div className="home">
+        <h1 className="home-text">Hello <br />I'm Baris</h1>
+        <a href='#' className="btn-resume btn-primary">Resume</a>
       </div>
-    </div>
   );
 }

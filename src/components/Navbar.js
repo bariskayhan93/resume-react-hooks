@@ -21,13 +21,12 @@ const getDimensions = ele => {
 const scrollTo = ele => {
   ele.scrollIntoView({
     behavior: "smooth",
-    block: "start",
+    block:'end',
   });
 };
 
 
 export default function Navbar() {
-
    const [visibleSection, setVisibleSection] = useState();
 
   const headerRef = useRef(null);
@@ -37,9 +36,9 @@ export default function Navbar() {
 
   const sectionRefs = [
     { section: "Home", ref: headerRef },
-    { section: "Leadership", ref: aboutRef },
-    { section: "Providers", ref: contactRef },
-    { section: "Operations", ref: projectsRef },
+    { section: "About", ref: aboutRef },
+    { section: "Contact", ref: contactRef },
+    { section: "Projects", ref: projectsRef },
   ];
 
   useEffect(() => {
@@ -80,20 +79,20 @@ export default function Navbar() {
         <ul className="nav-links">
           <li><Link to="home" className={`header_link ${visibleSection === "Home" ? "selected" : ""}`}
               onClick={() => {scrollTo(headerRef.current);}}>Home</Link></li>
-          <li><Link  to="about"className={`header_link ${visibleSection === "Leadership" ? "selected" : ""}`}
+          <li><Link  to="about"className={`header_link ${visibleSection === "About" ? "selected" : ""}`}
               onClick={() => {scrollTo(aboutRef.current);}}>About</Link></li>
-          <li><Link  to="projects" className={`header_link ${visibleSection === "Operations" ? "selected" : ""}`}
+          <li><Link  to="projects" className={`header_link ${visibleSection === "Projects" ? "selected" : ""}`}
               onClick={() => {scrollTo(projectsRef.current);}}>Projects</Link></li>
-                        <li><Link  to="contact" className={`header_link ${visibleSection === "Providers" ? "selected" : ""}`}
+          <li><Link  to="contact" className={`header_link ${visibleSection === "Contact" ? "selected" : ""}`}
               onClick={() => {scrollTo(contactRef.current); }}>Contact</Link></li>
         </ul>
       </div>
       </div>
     </nav>
-    <div className="section" id="Home" ref={headerRef} ><Home/></div>
-    <div className="section" id="Leadership" ref={aboutRef} ><AboutMe/></div>
-    <div className="section" id="Operations" ref={projectsRef} ><Projects/></div>
-    <div className="section" id="Providers" ref={contactRef} > <Contact/> </div>
+    <div ref={headerRef} ><Home/></div>
+    <div ref={aboutRef} ><AboutMe/></div>
+    <div  ref={projectsRef} ><Projects/></div>
+    <div ref={contactRef} > <Contact/> </div>
     </>
     
   );

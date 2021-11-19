@@ -26,11 +26,10 @@ export default function Projects() {
   }, [index]);
 
   return (
+    <div className="projects section" >
     <section className="section" id="service">
-      <div className="title">
-        <h2>
-          <span>Projects</span>
-        </h2>
+      <div className="title ">
+      <h2 className="about_subtitle">Projects</h2>
       </div>
       <div className="section-center">
         {projects.map((project, projectIndex) => {
@@ -49,7 +48,7 @@ export default function Projects() {
 
           return (
             <article className={position} key={id}>
-              <img src={image} alt={name} className="person-img" />
+              <img src={image} alt={name} className="project-img" />
               <h4>{name}</h4>
               <p className="title">{title}</p>
               <p className="text">{quote}</p>
@@ -65,5 +64,6 @@ export default function Projects() {
         </button>
       </div>
     </section>
+    </div>
   );
 }

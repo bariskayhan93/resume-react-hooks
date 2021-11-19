@@ -1,9 +1,7 @@
-import logo from "./logo.svg";
-
 const people = [
   {
     id: 1,
-    image: logo,
+    image: "https://wattx.io/wp-content/uploads/2021/07/portfolio-1.png",
     name: "Question-Answer Api",
     title: "react-redux project",
     quote:
@@ -12,16 +10,16 @@ const people = [
   },
   {
     id: 2,
-    image: logo,
+    image: "https://wattx.io/wp-content/uploads/2021/07/portfolio-1.png",
     name: "Data Site",
     title: "react-hooks project",
     quote:
-      "Gastropub sustainable tousled prism occupy. Viral XOXO roof party brunch actually, chambray listicle microdosing put a bird on it paleo subway tile squid umami.",
+      "Gastropub sustainable tousled prism occupy. Viral XOXO roof party brunch actually, chambray listicle microdosing put a b squid umami.",
     source: "https://github.com/bariskayhan93/project",
   },
   {
     id: 3,
-    image: logo,
+    image: "https://wattx.io/wp-content/uploads/2021/07/portfolio-1.png",
     name: "Personal Portfolio",
     title: "ract-hooks project",
     quote:

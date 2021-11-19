@@ -109,7 +109,7 @@ Navbar
 }
 .logo {
   width: 40rem;
-  margin-left: -40rem;
+  margin-left: -20rem;
 }
 
 @media screen and (max-width: 1500px) {
@@ -151,7 +151,7 @@ Navbar
 /*scroll*/
 /**/
 .top-spacer {
-  height: 50vh;
+/*  margin-top: 10vh;*/
 }
 
 .bottom-spacer {
@@ -187,7 +187,7 @@ Navbar
   color: #11bb9a;
 }
 
-#Home {
+.home {
   background: linear-gradient(43deg, #0f0092, #db0000);
   background-size: 400% 400%;
 
@@ -198,23 +198,19 @@ Navbar
 
   color: white;
   margin: 0 auto;
+  height: 600px;
   line-height: 609px;
-  font: normal normal 36px/1.4 sans-serif;
+  font: normal normal 40px/1.2 sans-serif;
   border-radius: 25px;
   width: 90%;
-  text-align: center;
-  vertical-align: middle;
-  line-height: 290px;
 }
-
-#Providers {
-  background-color: #ffe0ea;
+.home h1{
+  text-align: justify;
+  text-justify: center;
+  height: 200px;
+  line-height: 265px;
+  margin-left: 5%;
 }
-
-#Operations {
-  background-color: #d5f0d1;
-}
-
 /**/
 /*Homepage Animation*/
 /**/
@@ -275,8 +271,9 @@ Navbar
 
 /* ===== ABOUT =====*/
 .about{
-  background-color: rgb(236, 255, 197);
+  background-color: rgb(234, 241, 194);
   border-radius: 25px;
+  min-height: 700px;
 }
 
 .about-wrapper {
@@ -427,21 +424,21 @@ Slider
   margin: 0 auto;
   margin-top: 4rem;
   width: 80vw;
-  height: 450px;
+  height: 600px;
   max-width: 800px;
   text-align: center;
   position: relative;
   display: flex;
   overflow: hidden;
 }
-.person-img {
-  border-radius: 50%;
+.project-img {
+  border-radius: 5%;
   margin-bottom: 1rem;
-  width: 150px;
-  height: 150px;
+  width: 80%;
+  height: 60%;
   object-fit: cover;
-  border: 4px solid var(--clr-grey-8);
-  box-shadow: var(--dark-shadow);
+  border: 4px solid green;
+  box-shadow: darkgoldenrod;
 }
 article h4 {
   text-transform: uppercase;
@@ -470,21 +467,21 @@ article h4 {
   position: absolute;
   top: 200px;
   transform: translateY(-50%);
-  background: var(--clr-grey-5);
-  color: var(--clr-white);
+  background: hsl(210, 22%, 49%);
+  color: white;
   width: 1.25rem;
   height: 1.25rem;
   display: grid;
   place-items: center;
   border-color: transparent;
   font-size: 1rem;
-  border-radius: var(--radius);
+  border-radius: 0.25rem;
   cursor: pointer;
   transition: all 0.3s linear;
 }
 .prev:hover,
 .next:hover {
-  background: var(--clr-primary-5);
+  background: hsl(21, 62%, 45%);
 }
 .prev {
   left: 0;
@@ -510,7 +507,7 @@ article {
   width: 100%;
   height: 100%;
   opacity: 0;
-  transition: var(--transition);
+  transition: all 0.3s linear;
 }
 article.activeSlide {
   opacity: 1;
@@ -535,6 +532,62 @@ article.nextSlide {
   cursor: pointer;
   font-size: 0.8rem;
   border-radius: var(--mainBorderRadius);
-  display: inline-block;
+}
+.btn-resume{
+  background-color: rgb(190, 0, 149);
+  color: rgb(255, 255, 208);
+  border:transparent;
+  padding: 0.8rem 1.8rem;
+  font-size: 1.1rem;
+  border-radius:1rem;
+  box-shadow: 0 8px 8px -4px lightblue;
+  margin-left: 50%;
+  margin-top: 250px;
+}
+.btn-resume:hover{
+  box-shadow: 0 0 50px lightblue;
 }
 
+/**/
+/**  Contact   **/
+/**/
+
+.contact{
+  min-height: 300px;
+  background-color: #bedfdf;
+  color: rgb(25, 71, 23);
+  display: flex;
+  flex-direction: column;
+justify-content: center; /* align horizontal */
+align-items: center; /* align vertical */
+}
+.contact h1{
+  font-size: 30px;
+  margin-bottom: 120px;
+}
+
+.projects{
+  background-color: #d5f0d1;
+}
+
+.footer {
+  font-size: 14px;
+  color: rgb(180, 255, 242);
+  background-color: rgb(0, 0, 0);
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: row;
+}
+
+.footer p {
+  color: rgb(161, 255, 239);
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+  color: rgb(255, 255, 255);
+}

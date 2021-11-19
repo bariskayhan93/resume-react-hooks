@@ -3,10 +3,9 @@ import image from "../../photo.jpg";
 
 export default function AboutMe({ aboutRef }) {
   return (
-    <section className="about" ref={aboutRef}>
-        <div className="about-wrapper grey-padding section">
-
-          <div className="about_container grid">
+    <section className="about section" ref={aboutRef}>
+      <h2>About</h2>
+          <div className="section">
             {image === "" ? (
               <React.Fragment />
             ) : (
@@ -32,7 +31,6 @@ export default function AboutMe({ aboutRef }) {
               </p>
             </div>
           </div>
-        </div>
     </section>
   );
 }
