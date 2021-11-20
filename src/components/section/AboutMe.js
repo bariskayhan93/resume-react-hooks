@@ -1,36 +1,28 @@
-import React, { useRef } from "react";
+import React from "react";
 import image from "../../photo.jpg";
 
 export default function AboutMe({ aboutRef }) {
   return (
     <section className="about section" ref={aboutRef}>
-      <h2>About</h2>
-          <div className="section">
-            {image === "" ? (
-              <React.Fragment />
-            ) : (
-              <div className="about_img">
-                <img src={image} alt="About" />
-              </div>
-            )}
-            <div>
-              <h2 className="about_subtitle">Hello, I'm Baris</h2>
-              <p className="about_text">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Excepturi non quis, repellendus voluptate vero tempora corporis
-                ipsa dicta voluptatibus. Quam deserunt optio vitae eligendi
-                nostrum sit obcaecati dolor magnam fugit magni illo sint
-                officiis oiatis quod facere! Corrupti fuga saepe, maxime
-                aliquid quisquam deleniti cum ipsa error, quaerat impedit
-                recusandae enim exercitationem sed ducimus quas culpa eum alias
-                harum? Veniam ex eaque minus tenetur iusto adipisci, dicta ab
-                eligendi illo fuga. Dicta atque debitis commodi. Officiis, dicta
-                modi? Natus, neque? Vel deleniti eligendi optio? Reiciendis nisi
-                atque error officiis et dolorem dolore, cupiditate sunt natus ad
-                commodi! Animi Fugit?
-              </p>
-            </div>
-          </div>
+      <h1>About</h1>
+      <div className="about_container">
+        <img src={image} alt="About" />
+        <div>
+          <h2 className="about_subtitle">Hello, I'm Baris</h2>
+          <p className="about_text">
+            I'm currently looking for new opportunities in Web Development.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse modi
+            praesentium earum maiores ipsa repudiandae cumque eaque! Repellendus
+            quis voluptates, reprehenderit, libero est nam amet voluptatem iusto
+            necessitatibus, aut maiores magnam eligendi dolor. Nesciunt sunt
+            assumenda a error, maiores quasi tempore eligendi esse. Iure impedit
+            aspernatur placeat eligendi commodi blanditiis. After many years of
+            support I've decided to expand my skills into web programming. After
+            completing my recent web projects, it's now time to take my career
+            to the next level.
+          </p>
+        </div>
+      </div>
     </section>
   );
 }

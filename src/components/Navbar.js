@@ -1,6 +1,8 @@
 import React,{useRef,useState,useEffect} from "react";
 import { Link } from "react-router-dom";
-import logo from "../baris.svg";
+import { FaBars } from 'react-icons/fa';
+import { social } from '../data';
+import logo from "../baris-logo.svg";
 import "../index.css";
 import AboutMe from "./section/AboutMe";
 import Home from "./section/Home";
@@ -27,6 +29,11 @@ const scrollTo = ele => {
 
 
 export default function Navbar() {
+  const [showLinks, setShowLinks] = useState(false);
+  const linksContainerRef = useRef(null);
+  const linksRef = useRef(null);
+  const toggleLinks = () => {setShowLinks(!showLinks);};
+
    const [visibleSection, setVisibleSection] = useState();
 
   const headerRef = useRef(null);
@@ -42,8 +49,17 @@ export default function Navbar() {
   ];
 
   useEffect(() => {
+    
+    const linksHeight = linksRef.current.getBoundingClientRect().height;
+    if (showLinks) {
+      linksContainerRef.current.style.height = `${linksHeight}px`;
+    } else {
+      linksContainerRef.current.style.height = '0px';
+    }
+
+
     const handleScroll = () => {
-      const { height: headerHeight } = getDimensions(headerRef.current);
+     const { height: headerHeight } = getDimensions(headerRef.current);
       const scrollPosition = window.scrollY + headerHeight;
 
       const selected = sectionRefs.find(({ section, ref }) => {
@@ -66,17 +82,22 @@ export default function Navbar() {
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, [visibleSection]);
+  }, [visibleSection,sectionRefs,showLinks]);
   
 
   return (
     <>
 <nav className="navbar sticky">
 <div className="top-spacer" />
-<div className="content">
       <div className="nav-center">
+        <div className="nav-header">
         <Link to="/"><img src={logo} alt="react logo" className="logo" /></Link>
-        <ul className="nav-links">
+        <button className='nav-toggle' onClick={toggleLinks}>
+            <FaBars />
+          </button>
+          </div>
+        <div className='links-container' ref={linksContainerRef}>
+        <ul className="nav-links links" ref={linksRef}>
           <li><Link to="home" className={`header_link ${visibleSection === "Home" ? "selected" : ""}`}
               onClick={() => {scrollTo(headerRef.current);}}>Home</Link></li>
           <li><Link  to="about"className={`header_link ${visibleSection === "About" ? "selected" : ""}`}
@@ -87,31 +108,22 @@ export default function Navbar() {
               onClick={() => {scrollTo(contactRef.current); }}>Contact</Link></li>
         </ul>
       </div>
-      </div>
-    </nav>
+      <ul className='social-icons'>
+          {social.map((socialIcon) => {
+            const { id, url, icon } = socialIcon;
+            return (
+              <li key={id}>
+                <a href={url}>{icon}</a>
+              </li>
+            );
+          })}
+        </ul>
+</div>
+</nav>
     <div ref={headerRef} ><Home/></div>
     <div ref={aboutRef} ><AboutMe/></div>
-    <div  ref={projectsRef} ><Projects/></div>
+    <div ref={projectsRef} ><Projects/></div>
     <div ref={contactRef} > <Contact/> </div>
     </>
-    
   );
-  
-  
-  
-  {/*(
-    <nav className="navbar">
-      <div className="nav-center">
-        <Link to="/">
-          <img src={logo} alt="react logo" className="logo" />
-        </Link>
-        <ul className="nav-links">
-        <li><Link activeClass="active" to="home" spy={true} smooth={true}>Home</Link></li>
-          <li><Link  to="about" spy={true} smooth={true}>About</Link></li>
-          <li><Link  to="contact" spy={true} smooth={true}>Contact</Link></li>
-          <li><Link  to="service" spy={true} smooth={true}>Service</Link></li>
-        </ul>
-      </div>
-    </nav>
-  );*/}
 }

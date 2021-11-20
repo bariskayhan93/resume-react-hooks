@@ -29,11 +29,11 @@ export default function Projects() {
     <div className="projects section" >
     <section className="section" id="service">
       <div className="title ">
-      <h2 className="about_subtitle">Projects</h2>
+      <h1>Projects</h1>
       </div>
       <div className="section-center">
         {projects.map((project, projectIndex) => {
-          const { id, image, name, title, quote,source } = project;
+          const { id, image, name, title, quote,source,deploy } = project;
 
           let position = 'nextSlide';
           if (projectIndex === index) {
@@ -48,7 +48,9 @@ export default function Projects() {
 
           return (
             <article className={position} key={id}>
+              <a href={deploy}>
               <img src={image} alt={name} className="project-img" />
+              </a>
               <h4>{name}</h4>
               <p className="title">{title}</p>
               <p className="text">{quote}</p>

@@ -1,3 +1,28 @@
+import React from 'react';
+import { FaBehance, FaFacebook, FaLinkedin, FaTwitter } from 'react-icons/fa';
+export const social = [
+  {
+    id: 1,
+    url: 'https://www.twitter.com',
+    icon: <FaFacebook />,
+  },
+  {
+    id: 2,
+    url: 'https://www.twitter.com',
+    icon: <FaTwitter />,
+  },
+  {
+    id: 3,
+    url: 'https://www.twitter.com',
+    icon: <FaLinkedin />,
+  },
+  {
+    id: 4,
+    url: 'https://www.twitter.com',
+    icon: <FaBehance />,
+  },
+];
+
 const people = [
   {
     id: 1,
@@ -7,6 +32,7 @@ const people = [
     quote:
       "Fingerstache umami squid, kinfolk subway tile selvage tumblr man braid viral kombucha gentrify fanny pack raclette pok pok mustache.",
     source: "https://github.com/bariskayhan93/project",
+    deploy:'https://project-react-safa.netlify.app',
   },
   {
     id: 2,
@@ -16,6 +42,7 @@ const people = [
     quote:
       "Gastropub sustainable tousled prism occupy. Viral XOXO roof party brunch actually, chambray listicle microdosing put a b squid umami.",
     source: "https://github.com/bariskayhan93/project",
+    deploy:'https://project-react-safa.netlify.app',
   },
   {
     id: 3,
@@ -25,6 +52,7 @@ const people = [
     quote:
       "Drinking vinegar polaroid street art echo park, actually semiotics next level butcher master cleanse hammock flexitarian ethical paleo.",
     source: "https://github.com/bariskayhan93/project",
+    deploy:'https://project-react-safa.netlify.app',
   },
 ];
 
