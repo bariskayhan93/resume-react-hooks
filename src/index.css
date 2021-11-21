@@ -374,6 +374,12 @@ color: rgb(55, 124, 95);
     flex-direction:column;
     margin-top: 0;
   }
+  .project-img {
+    max-height: 50%;
+  }
+  .section-center{
+    max-height: 500px;
+  }
 }
 
 /*===== LAYOUT =====*/
