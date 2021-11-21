@@ -379,6 +379,7 @@ color: rgb(55, 124, 95);
   }
   .section-center{
     max-height: 500px;
+    margin-top: -4% !important;
   }
 }
 
