@@ -381,6 +381,14 @@ color: rgb(55, 124, 95);
     max-height: 500px;
     margin-top: -4% !important;
   }
+  .home h1{
+  text-align:start;
+  text-justify: center;
+  height: 180px;
+  line-height: 145px;
+  margin-left: 5%;
+  font-size: 80px;
+}
 }
 
 /*===== LAYOUT =====*/
