@@ -1,25 +1,24 @@
 import React from "react";
-import image from "../../photo.jpg";
 
 export default function AboutMe({ aboutRef }) {
   return (
     <section className="about section" ref={aboutRef}>
       <h1>About</h1>
       <div className="about_container">
-        <img src={image} alt="About" />
+        <img
+          src="https://avatars.githubusercontent.com/u/83955254?v=4"
+          alt="About"
+        />
         <div>
           <h2 className="about_subtitle">Hello, I'm Baris</h2>
           <p className="about_text">
-            I'm currently looking for new opportunities in Web Development.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse modi
-            praesentium earum maiores ipsa repudiandae cumque eaque! Repellendus
-            quis voluptates, reprehenderit, libero est nam amet voluptatem iusto
-            necessitatibus, aut maiores magnam eligendi dolor. Nesciunt sunt
-            assumenda a error, maiores quasi tempore eligendi esse. Iure impedit
-            aspernatur placeat eligendi commodi blanditiis. After many years of
-            support I've decided to expand my skills into web programming. After
-            completing my recent web projects, it's now time to take my career
-            to the next level.
+            I am a web developer with a knowledge in different front end and
+            back end languages, responsive frameworks, databases and best code
+            practices. My objective is simply to be the best web developer that
+            I can be and to contribute to the technology industry all that I
+            know and can do. I am dedicated to perfecting my craft by learning
+            from more seasoned developers, remaining humble and continuously
+            making strides to learn all that I can about development.
           </p>
         </div>
       </div>

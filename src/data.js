@@ -1,58 +1,69 @@
-import React from 'react';
-import { FaBehance, FaFacebook, FaLinkedin, FaTwitter } from 'react-icons/fa';
+import React from "react";
+import {  FaCodepen, FaLinkedin, FaTwitter,FaGithub } from "react-icons/fa";
 export const social = [
-  {
-    id: 1,
-    url: 'https://www.twitter.com',
-    icon: <FaFacebook />,
-  },
+
   {
     id: 2,
-    url: 'https://www.twitter.com',
+    url: "https://www.twitter.com/bariskayhan1",
     icon: <FaTwitter />,
   },
   {
+    id: 1,
+    url: "https://codepen.io/bariskayhan93",
+    icon: <FaCodepen />,
+  },
+  {
     id: 3,
-    url: 'https://www.twitter.com',
+    url: "https://www.linkedin.com/in/baris-kayhan/",
     icon: <FaLinkedin />,
   },
   {
-    id: 4,
-    url: 'https://www.twitter.com',
-    icon: <FaBehance />,
-  },
+    id: 3,
+    url: "https://github.com/bariskayhan93",
+    icon: <FaGithub />,
+  }
 ];
 
 const people = [
   {
     id: 1,
-    image: "https://wattx.io/wp-content/uploads/2021/07/portfolio-1.png",
+    image: "https://i.stack.imgur.com/emvz0.png",
     name: "Question-Answer Api",
-    title: "react-redux project",
+    title: "node js, express js project",
     quote:
-      "Fingerstache umami squid, kinfolk subway tile selvage tumblr man braid viral kombucha gentrify fanny pack raclette pok pok mustache.",
-    source: "https://github.com/bariskayhan93/project",
-    deploy:'https://project-react-safa.netlify.app',
+      "It's a restful api with async await structure on Node JS. Used Express.js and mongoose. Includes CRUID Operations with authorization using JWT and admin/user parameters. Includes Image Upload proccess also.",
+    source: "https://github.com/bariskayhan93/Question-Answer-API",
+    deploy: "https://baris-kayhan-portfolio.netlify.app",
   },
   {
     id: 2,
-    image: "https://wattx.io/wp-content/uploads/2021/07/portfolio-1.png",
-    name: "Data Site",
+    image: "https://user-images.githubusercontent.com/83955254/143498459-cbbf19d3-84b0-48be-b578-2c387f325b9c.png",
+    name: "Cocktails Menu App",
     title: "react-hooks project",
     quote:
-      "Gastropub sustainable tousled prism occupy. Viral XOXO roof party brunch actually, chambray listicle microdosing put a b squid umami.",
-    source: "https://github.com/bariskayhan93/project",
-    deploy:'https://project-react-safa.netlify.app',
+      "Utilizes a third party API to retrieve weather information. Can select a specific Cocktail to view detailed information.",
+    source: "https://github.com/bariskayhan93/fetch-data-react-hooks",
+    deploy: "https://cocktail-react-hooks.netlify.app",
   },
   {
     id: 3,
-    image: "https://wattx.io/wp-content/uploads/2021/07/portfolio-1.png",
+    image: "https://user-images.githubusercontent.com/83955254/143496713-8215d5f4-2010-4ab2-a396-d9b925fe7964.png",
     name: "Personal Portfolio",
-    title: "ract-hooks project",
+    title: "react-hooks project",
     quote:
-      "Drinking vinegar polaroid street art echo park, actually semiotics next level butcher master cleanse hammock flexitarian ethical paleo.",
-    source: "https://github.com/bariskayhan93/project",
-    deploy:'https://project-react-safa.netlify.app',
+      "Portfolio using React JS to display my projects, skills, and previous work experience for front end development. Ability to directly contact via email and access to download my latest resume.",
+    source: "https://github.com/bariskayhan93/resume-react-hooks",
+    deploy: "https://baris-kayhan-portfolio.netlify.app",
+  },
+  {
+    id: 4,
+    image:
+      "https://user-images.githubusercontent.com/83955254/143462421-85816fb3-5946-4001-a390-7c0089c395ac.png",
+    name: "Northwind Shopping App",
+    title: "react-redux project",
+    quote: `A Shopping Application using React JS and Redux-Thunk that allow the user to select products, add them to the cart, and then remove them. It is possible to add new products to database through the application.`,
+    source: "https://github.com/bariskayhan93/Northwind-Redux",
+    deploy: "https://shopping-redux.netlify.app",
   },
 ];
 

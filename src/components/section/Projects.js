@@ -48,13 +48,13 @@ export default function Projects() {
 
           return (
             <article className={position} key={id}>
-              <a href={deploy}>
+              <a href={deploy} target="_blank">
               <img src={image} alt={name} className="project-img" />
               </a>
               <h4>{name}</h4>
               <p className="title">{title}</p>
               <p className="text">{quote}</p>
-              <a href={source} className="btn-primary">Source Code</a>
+              <a href={source} target="_blank" className="btn-primary">Source Code</a>
             </article>
           );
         })}

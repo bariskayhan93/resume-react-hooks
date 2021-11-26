@@ -378,7 +378,7 @@ color: rgb(55, 124, 95);
     max-height: 220px;
   }
   .section-center{
-    max-height: 500px;
+    max-height: 80%;
     margin-top: -4% !important;
   }
   .home h1{
@@ -516,6 +516,7 @@ Slider
   text-align: center;
   position: relative;
   display: flex;
+  
   overflow: hidden;
 }
 .projects{
