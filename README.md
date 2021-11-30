@@ -6,4 +6,6 @@ When you click on the picture in the projects section, the site where the projec
 opens in the new tab. At the bottom of the description, the repo of the project can be reached 
 with the link directed to github. 
 
+Deployed on Netlify--->https://baris-kayhan-portfolio.netlify.app
+
 
