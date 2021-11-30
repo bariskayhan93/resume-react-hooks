@@ -8,6 +8,6 @@ with the link directed to github.
 
 Deployed on Netlify--->https://baris-kayhan-portfolio.netlify.app
 
-https://user-images.githubusercontent.com/83955254/143496713-8215d5f4-2010-4ab2-a396-d9b925fe7964.png
+![Opera_localhost](https://user-images.githubusercontent.com/83955254/143496713-8215d5f4-2010-4ab2-a396-d9b925fe7964.png)
 
 
