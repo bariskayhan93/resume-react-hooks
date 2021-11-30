@@ -26,6 +26,18 @@ export const social = [
 
 const people = [
   {
+    id: 0,
+    image:
+      "https://user-images.githubusercontent.com/83955254/144126342-c3c179f3-9b22-4971-8de1-53177f04ef78.png",
+    name: "Bird Tracking App",
+    title: "MERN Project",
+    quote: `By logging in as a user, you can pin on the map the bird photos you 
+    have taken, and you can also see the photos pinned by other users.
+     -React-Hooks, Node JS, Express JS, Mongo DB, HEROKU`,
+    source: "https://github.com/bariskayhan93/bird-tracking-app",
+    deploy: "https://bird-tracking.herokuapp.com",
+  },
+  {
     id: 1,
     image: "https://i.stack.imgur.com/emvz0.png",
     name: "Question-Answer Api",
@@ -41,7 +53,7 @@ const people = [
     name: "Cocktails Menu App",
     title: "react-hooks project",
     quote:
-      "Utilizes a third party API to retrieve weather information. Can select a specific Cocktail to view detailed information.",
+      "Utilizes a third party API to retrieve Cocktails. Can select a specific Cocktail to view detailed information.",
     source: "https://github.com/bariskayhan93/fetch-data-react-hooks",
     deploy: "https://cocktail-react-hooks.netlify.app",
   },
